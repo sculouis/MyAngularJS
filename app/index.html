@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="lib/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" />
+  <link rel="stylesheet" href="lib/alertifyjs/build/css/alertify.min.css" />
+  <link rel="stylesheet" href="lib/alertifyjs/build/css/themes/default.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <home></home>
+    <div ng-view></div>
+  </div>
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-animate/angular-animate.js"></script>
+  <script src="lib/angular-touch/angular-touch.js"></script>
+  <script src="lib/angular-resource/angular-resource.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="lib/redux/dist/redux.min.js"></script>
+  <script src="lib/ng-redux.js"></script>
+  <script src="lib/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="lib/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+  <script src="lib/alertifyjs/build/alertify.min.js"></script>
+  <script src="app.js"></script>
+  <script src="home/homeModule.js"></script>
+  <script src="home/homeComponent.js"></script>
+  <script src="tabs/tabModule.js"></script>
+  <script src="tabs/tabComponent.js"></script>
+  <script src="reduxSample/reduxSampleModule.js"></script>
+  <script src="reduxSample/reduxSampleComponent.js"></script>
+</body>
+
+</html>

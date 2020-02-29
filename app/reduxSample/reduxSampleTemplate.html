@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Redux Sample</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="$ctrl.onClick()" value="ClickeMe">Click Me</button>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>points</th>
+                    <th>modify</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="store in $ctrl.stories">
+                    <th scope="row" ng-bind="$index + 1"></th>
+                    <td ng-bind="store.id"></td>
+                    <td ng-bind="store.title"></td>
+                    <td ng-bind="store.points"></td>
+                    <td><button ng-click="$ctrl.delete($index,store)" class="btn btn-primary">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
