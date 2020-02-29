@@ -37,7 +37,7 @@
           case 'Add':
             state.stories.push(action.payload);
             break;
-          case 'delete':
+          case 'Delete':
             state.stories.splice(action.payload, 1);
             break;
         }

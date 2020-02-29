@@ -38,7 +38,7 @@
           alertify.confirm('確認刪除？',
           function(){
             $ngRedux.dispatch({
-              type: 'delete',
+              type: 'Delete',
               payload:index 
               });
               alertify.success('You Choiced ok to Delete:' + store.title);
